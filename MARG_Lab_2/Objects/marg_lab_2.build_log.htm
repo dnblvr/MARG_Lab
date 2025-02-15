@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Gian Fajardo, California State University, Northridge, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.40.0.3
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\Sync'd Documents\ECE 425 & L - Microprocessor Systems with Lab\Labs\Final Project\MARG_Lab_2\marg_lab_2.uvprojx
+Project File Date:  07/06/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+MPU_6050.c(4): warning: In file included from...
+.\I2C.h(9): warning: unused function 'I2C_wait_till_done' [-Wunused-function]
+    9 | static int I2C_wait_till_done(void);
+      |            ^~~~~~~~~~~~~~~~~~
+1 warning generated.
+compiling MPU_6050.c...
+main.c(28): warning: variable 'GyroY' set but not used [-Wunused-but-set-variable]
+   28 |                                         GyroX,  GyroY,  GyroZ,
+      |                                                 ^
+main.c(28): warning: variable 'GyroZ' set but not used [-Wunused-but-set-variable]
+   28 |                                         GyroX,  GyroY,  GyroZ,
+      |                                                         ^
+main.c(29): warning: unused variable 'Temp' [-Wunused-variable]
+   29 |                                         Temp, 
+      |                                         ^~~~
+main.c(30): warning: variable 'magX' set but not used [-Wunused-but-set-variable]
+   30 |                                         magX,   magY,   magZ;
+      |                                         ^
+main.c(30): warning: variable 'magY' set but not used [-Wunused-but-set-variable]
+   30 |                                         magX,   magY,   magZ;
+      |                                                 ^
+main.c(32): warning: variable 'AX' set but not used [-Wunused-but-set-variable]
+   32 |         float AX, AY, AZ, t, GX, GY, GZ, MX, MY, MZ;
+      |               ^
+main.c(32): warning: variable 'AY' set but not used [-Wunused-but-set-variable]
+   32 |         float AX, AY, AZ, t, GX, GY, GZ, MX, MY, MZ;
+      |                   ^
+main.c(32): warning: unused variable 't' [-Wunused-variable]
+   32 |         float AX, AY, AZ, t, GX, GY, GZ, MX, MY, MZ;
+      |                           ^
+main.c(32): warning: variable 'GX' set but not used [-Wunused-but-set-variable]
+   32 |         float AX, AY, AZ, t, GX, GY, GZ, MX, MY, MZ;
+      |                              ^
+main.c(32): warning: variable 'GY' set but not used [-Wunused-but-set-variable]
+   32 |         float AX, AY, AZ, t, GX, GY, GZ, MX, MY, MZ;
+      |                                  ^
+main.c(32): warning: variable 'GZ' set but not used [-Wunused-but-set-variable]
+   32 |         float AX, AY, AZ, t, GX, GY, GZ, MX, MY, MZ;
+      |                                      ^
+main.c(32): warning: variable 'MX' set but not used [-Wunused-but-set-variable]
+   32 |         float AX, AY, AZ, t, GX, GY, GZ, MX, MY, MZ;
+      |                                          ^
+main.c(32): warning: variable 'MY' set but not used [-Wunused-but-set-variable]
+   32 |         float AX, AY, AZ, t, GX, GY, GZ, MX, MY, MZ;
+      |                                              ^
+main.c(7): warning: In file included from...
+.\I2C.h(9): warning: unused function 'I2C_wait_till_done' [-Wunused-function]
+    9 | static int I2C_wait_till_done(void);
+      |            ^~~~~~~~~~~~~~~~~~
+14 warnings generated.
+compiling main.c...
+QMC5883L.c(3): warning: In file included from...
+.\I2C.h(9): warning: unused function 'I2C_wait_till_done' [-Wunused-function]
+    9 | static int I2C_wait_till_done(void);
+      |            ^~~~~~~~~~~~~~~~~~
+1 warning generated.
+compiling QMC5883L.c...
+assembling startup_TM4C123.s...
+compiling I2C.c...
+compiling system_TM4C123.c...
+compiling UART.c...
+compiling LCD.c...
+linking...
+Program Size: Code=9700 RO-data=1204 RW-data=0 ZI-data=608  
+".\Objects\marg_lab_2.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Keil_v5/ARM/PACK/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Keil_v5/ARM/PACK/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device:Startup@1.0.1
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
