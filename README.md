@@ -1,1 +1,1 @@
-# MARG_Lab
+# ECE 425 - MARG Lab
